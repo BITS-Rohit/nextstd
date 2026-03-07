@@ -118,19 +118,28 @@ int main() {
 ## Project Structure
 
 ```bash
-ns_io/
-├── Cargo.toml               # Rust dependencies
-├── examples                 # Example programs
+nextstd
+├── Cargo.lock
+├── Cargo.toml
+├── CHANGELOG.md
+├── changelog.sh
+├── cliff.toml
+├── crates
+│   ├── ns_data
+│   ├── ns_io
+│   │   ├── Cargo.toml
+│   │   └── src
+│   │       ├── input.rs
+│   │       ├── lib.rs
+│   │       └── print.rs
+│   └── ns_math
+├── examples
 │   ├── 01_print_integer.c
 │   ├── 02_print_float_double.c
 │   ├── 03_print_string.c
 │   └── 04_user_input.c
 ├── LICENSE
-├── Makefile               
-├── ns_io.h                  # Header file
-├── README.md
-└── src
-    ├── input.rs             # User input functions
-    ├── lib.rs               # File to link all modules
-    └── print.rs             # Printing implementation
+├── Makefile
+├── ns_io.h
+└── README.md
 ```

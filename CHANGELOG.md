@@ -44,6 +44,11 @@
 - **(cl update)** Update CHANGELOG - ([702d6da](https://github.com/NextStd/ns_io/commit/702d6da1493064133aac1ec2cebf7a27e0de7fca)) by @Vaishnav-Sabari-Girish
 
 
+### :white_check_mark: Testing
+
+- **(examples update)** Updated examples with latest functions - ([1deb48b](https://github.com/NextStd/ns_io/commit/1deb48b01b2763ba0bcf311e3cde2fcd38b42de9)) by @Vaishnav-Sabari-Girish
+
+
 ### :hammer: Build
 
 - **(changed Makefile)** Update Makefile - ([38ada4b](https://github.com/NextStd/ns_io/commit/38ada4b107dd1e6d1aa3f8c9b58f68adf2b54f41)) by @Vaishnav-Sabari-Girish

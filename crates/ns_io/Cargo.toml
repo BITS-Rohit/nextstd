@@ -1,0 +1,13 @@
+[package]
+name = "ns_io"
+# The ".workspace = true" tells Cargo to look at the root Cargo.toml for these values
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+
+[lib]
+# We keep this here so Cargo knows to build the .so / .a files for C to link against
+crate-type = ["cdylib", "staticlib"]
+
+[dependencies]
+# Dependencies specific to ns_io go here

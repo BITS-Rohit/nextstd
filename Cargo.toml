@@ -1,11 +1,12 @@
-[package]
-name = "ns_io"
+[workspace]
+resolver = "2"
+members = [
+  "crates/ns_io"
+  # "crates/ns_data"
+]
+
+# Shared metadata
+[workspace.package]
 version = "0.1.0"
 edition = "2024"
-
-[lib]
-# "cdylib" = Dynamic Library (.so / .dll)
-# "staticlib" = Static Library (.a / .lib)
-crate-type = ["cdylib", "staticlib"]
-
-[dependencies]
+authors = ["Vaishnav Sabari Girish"]
