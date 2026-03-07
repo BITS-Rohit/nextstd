@@ -1,5 +1,5 @@
-#ifndef NS_IO_H
-#define NS_IO_H
+#ifndef NS_H
+#define NS_H
 
 // Check if we are in C++ 
 #ifdef __cplusplus
@@ -69,4 +69,4 @@ extern "C" {
 }
 #endif // !__cplusplus
 
-#endif // !NS_IO_H
+#endif // !NS_H

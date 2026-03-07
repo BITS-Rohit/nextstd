@@ -1,4 +1,4 @@
-#include "../ns_io.h"
+#include "../ns.h"
 
 int main() {
   int count = 42;

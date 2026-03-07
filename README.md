@@ -1,6 +1,6 @@
 # ns_io (NextStd I/O)
 
-**ns_io** is a modern, type-safe alternative for C's standard `<stdio.h>`.
+**ns** is a modern, type-safe alternative for C's standard `<stdio.h>`.
 
 It is designed to provide the ergonomics of high-level languages (like
 automatic type detection and safety) while maintaining C compatibility.
@@ -12,7 +12,7 @@ View the [CHANGELOG.md](./CHANGELOG.md)
 > [!IMPORTANT]
 > Currently you cannot add `ns_io` to your system i.e it cannot be imported as
 below :
-> `#include <ns_io.h>`
+> `#include <ns.h>`
 > For now just run the examples or add your own in the `examples/` directory.
 
 ## Features
@@ -100,7 +100,7 @@ make 01_print_integer
 Include the header and link against the library.
 
 ```c
-#include "ns_io.h"
+#include "ns.h"
 
 int main() {
     int x = 42;
@@ -140,6 +140,6 @@ nextstd
 │   └── 04_user_input.c
 ├── LICENSE
 ├── Makefile
-├── ns_io.h
+├── ns.h
 └── README.md
 ```

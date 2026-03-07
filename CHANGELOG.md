@@ -1,6 +1,8 @@
 
 ### :rocket: New features
 
+- **(add cargo workspace)** Workspaces added for better structure - ([c26523f](https://github.com/NextStd/ns_io/commit/c26523fdc0f665a562c0e519579c2d82890975be)) by @Vaishnav-Sabari-Girish
+
 - **(separate print and println)** Separate print, println - ([9096ba9](https://github.com/NextStd/ns_io/commit/9096ba9f70dac33cd16d17a925ff68b7c0c105fd)) by @Vaishnav-Sabari-Girish
 
 - **(Add user input)** User input added - ([70fb385](https://github.com/NextStd/ns_io/commit/70fb385247fc1d10c800173c7caf90ca1e6377f7)) by @Vaishnav-Sabari-Girish
@@ -55,6 +57,10 @@
 
 
 ### :twisted_rightwards_arrows: Pull Requests
+
+- Merge pull request #4 from NextStd/refactor/cargo_workspaces
+
+feat(add cargo workspace): Workspaces added for better structure - ([4db9326](https://github.com/NextStd/ns_io/commit/4db932646aaee85ee4c7ff8bfd51bcf2ab149b43)) in [#4](https://github.com/NextStd/ns_io/pull/4) by @Vaishnav-Sabari-Girish
 
 - Merge branch 'main' of github.com:NextStd/ns_io - ([27db5eb](https://github.com/NextStd/ns_io/commit/27db5eb0b9f819d71b8364899f3224a0dcdb8bfb)) by @Vaishnav-Sabari-Girish
 

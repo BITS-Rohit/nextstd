@@ -1,41 +1,46 @@
 # --- Configuration ---
 CC = gcc
-RUST_DIR = ./target/release
+CFLAGS = -Wall -Wextra -O2 
+RUST_DIR = target/release
 BIN_DIR = bin
 EXAMPLE_DIR = examples
 
 # Flags
 INCLUDES = -I.
-LIBS = -L$(RUST_DIR) -lns_io -lpthread -ldl -Wl,-rpath=$(RUST_DIR)
+LIBS = -L$(RUST_DIR) -lns_io -lpthread -ldl -lm -Wl,-rpath=$(RUST_DIR)
+
+EXAMPLES = $(patsubst $(EXAMPLE_DIR)/%.c,%,$(wildcard $(EXAMPLE_DIR)/*.c))
 
 # --- Targets ---
+.PHONY: all rust clean clean-bin directories list
 
-.PHONY: all rust clean directories list
+all: list
 
-# 1. Create the bin directory
 directories:
 	@mkdir -p $(BIN_DIR)
 
-# 2. Build the Rust Library
 rust:
 	@cargo build --release -q
 
-# 3. List all available examples
 list:
 	@echo "Available examples:"
-	@ls $(EXAMPLE_DIR)/*.c | sed 's|$(EXAMPLE_DIR)/||;s|\.c||' | sed 's|^|  |'
+	@for ex in $(EXAMPLES); do echo "  $$ex"; done
 	@echo ""
 	@echo "Usage:"
 	@echo "  make <name>   : Compile & Run (e.g., 'make 01_print_integer')"
 
-# 4. THE MAIN RULE: Compile AND Run AND Clean
-# Usage: make 01_print_integer
-%: $(EXAMPLE_DIR)/%.c rust directories
-	@$(CC) $< -o $(BIN_DIR)/$@ $(INCLUDES) $(LIBS)
+# THE MAIN RULE
+%: $(EXAMPLE_DIR)/%.c ns.h rust directories
+	@$(CC) $(CFLAGS) $< -o $(BIN_DIR)/$@ $(INCLUDES) $(LIBS)
 	@./$(BIN_DIR)/$@
-	@$(MAKE) -s clean
+	@$(MAKE) -s clean-bin
 
-# 5. Clean up
-clean:
-	@cargo clean -q
+# --- Clean Rules ---
+
+# 1. Fast Clean: Deletes only the temporary C binaries
+clean-bin:
 	@rm -rf $(BIN_DIR)
+
+# 2. Deep Clean: Deletes C binaries AND purges the Rust build cache
+clean: clean-bin
+	@cargo clean -q
