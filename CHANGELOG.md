@@ -48,6 +48,8 @@
 
 ### :wrench: Miscellaneous
 
+- **(cl update)** Updated CHANGELOG - ([329aef8](https://github.com/NextStd/ns_io/commit/329aef85043f702dc72b17a275ccbda39c55ac92)) by @Vaishnav-Sabari-Girish
+
 - **(cl update)** Update CHANGELOG - ([702d6da](https://github.com/NextStd/ns_io/commit/702d6da1493064133aac1ec2cebf7a27e0de7fca)) by @Vaishnav-Sabari-Girish
 
 

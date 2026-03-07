@@ -10,7 +10,7 @@ memory-safe backend while exposing a clean **C API**.
 View the [CHANGELOG.md](./CHANGELOG.md)
 
 > [!IMPORTANT]
-> Currently you cannot add `ns_io` to your system i.e it cannot be imported as
+> Currently you cannot add `ns` to your system i.e it cannot be imported as
 below :
 > `#include <ns.h>`
 > For now just run the examples or add your own in the `examples/` directory.
@@ -30,6 +30,7 @@ and running binaries.
 - [x] Float/Double Printing (`float` / `double`)
 - [x] String Printing
 - [x] Separate `print` and `println` functions for better printing
+- [x] Create `cargo` workspaces for a more structured monorepo
 - [ ] Printing Variables + String
 - [x] User Input
 
