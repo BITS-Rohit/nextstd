@@ -6,6 +6,7 @@ int main(void)
   double pi;
 
   // Read int 
+  // Same line
   ns_print("Enter your age: ");
   ns_read(&age);
 
@@ -13,10 +14,11 @@ int main(void)
   ns_print("Enter value of PI: ");
   ns_read(&pi);
 
-  ns_print("-----RESULTS------");
+  // Newline 
+  ns_println("-----RESULTS------");
   ns_print("Age: ");
-  ns_print(age);
+  ns_println(age);
 
   ns_print("Pi: ");
-  ns_print(pi);
+  ns_println(pi);
 }

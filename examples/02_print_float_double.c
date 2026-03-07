@@ -10,15 +10,26 @@ int main(void)
   double d1 = 789.67;
 
   // Test Generic Macro
-  ns_print(count);
-  ns_print(negative);
+  // Same line
+  ns_print(count); ns_print(" ");
+  ns_print(negative); ns_print(" ");
   ns_print(zero);
 
+  ns_println("");
+
+  // Newline
+
+  ns_println(count); 
+  ns_println(negative); 
+  ns_println(zero);
+
   // Double
-  ns_print(d1);
+  ns_print(d1); ns_print(" ");
+  ns_println(d1);
 
   // Test Raw literal (Double)
-  ns_print(345.78);
+  ns_print(345.78); ns_print(" ");
+  ns_println(345.78);
 
   return 0;
 }

@@ -39,6 +39,11 @@
 - **(add README)** Added README.md - ([797e2c2](https://github.com/NextStd/ns_io/commit/797e2c230f762fcff34a0a6ac7aaeae3b235bdd8)) by @Vaishnav-Sabari-Girish
 
 
+### :wrench: Miscellaneous
+
+- **(cl update)** Update CHANGELOG - ([702d6da](https://github.com/NextStd/ns_io/commit/702d6da1493064133aac1ec2cebf7a27e0de7fca)) by @Vaishnav-Sabari-Girish
+
+
 ### :hammer: Build
 
 - **(changed Makefile)** Update Makefile - ([38ada4b](https://github.com/NextStd/ns_io/commit/38ada4b107dd1e6d1aa3f8c9b58f68adf2b54f41)) by @Vaishnav-Sabari-Girish
