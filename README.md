@@ -29,6 +29,7 @@ and running binaries.
 - [x] Integer Printing (`int`)
 - [x] Float/Double Printing (`float` / `double`)
 - [x] String Printing
+- [x] Type safe strings (`ns_string`)
 - [x] Separate `print` and `println` functions for better printing
 - [x] Create `cargo` workspaces for a more structured monorepo
 - [ ] Printing Variables + String

@@ -1,6 +1,7 @@
 use std::ffi::CStr;
 use std::os::raw::c_char;
 use std::io::{self, Write};
+use ns_string::NsString;
 
 // No Newline functions
 
@@ -98,5 +99,47 @@ pub extern "C" fn ns_println_string(ptr: *const c_char) {
     // "to_string_lossy()" is best if the string has non-UTF-8 characters
     // Replaces them with <SPACE> instead of crashing
     println!("{}", c_str.to_string_lossy());
+}
+
+// Printing ns_string types
+// No newline
+#[unsafe(no_mangle)]
+pub extern "C" fn ns_print_ns_string(val: NsString) {
+    let bytes = if val.is_heap {
+        unsafe {
+            std::slice::from_raw_parts(val.data.heap.ptr, val.len)
+        }
+    } else {
+        unsafe {
+            &val.data.inline_data[..val.len]
+        }
+    };
+
+    // COnvert to rust string (To handle non-UTF-8)
+    let rust_str = String::from_utf8_lossy(bytes);
+
+    // Print and flush
+    print!("{}", rust_str);
+    io::stdout().flush().unwrap();
+}
+
+// Newline 
+#[unsafe(no_mangle)]
+pub extern "C" fn ns_println_ns_string(val: NsString) {
+    let bytes = if val.is_heap {
+        unsafe {
+            std::slice::from_raw_parts(val.data.heap.ptr, val.len)
+        }
+    } else {
+        unsafe {
+            &val.data.inline_data[..val.len]
+        }
+    };
+
+    // COnvert to rust string (To handle non-UTF-8)
+    let rust_str = String::from_utf8_lossy(bytes);
+
+    // Print and flush
+    println!("{}", rust_str);
 }
 

@@ -1,4 +1,4 @@
-#include "../ns.h"
+#include "../include/ns.h"
 
 int main() {
   int count = 42;

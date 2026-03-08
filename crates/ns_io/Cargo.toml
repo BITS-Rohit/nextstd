@@ -10,4 +10,4 @@ authors.workspace = true
 crate-type = ["cdylib", "staticlib"]
 
 [dependencies]
-# Dependencies specific to ns_io go here
+ns_string = { path = "../ns_string" }

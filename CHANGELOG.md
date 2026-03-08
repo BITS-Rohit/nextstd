@@ -22,6 +22,8 @@
 
 ### :page_facing_up: Documentation
 
+- **(README update)** Updated README - ([03ad2ed](https://github.com/NextStd/ns_io/commit/03ad2edecf07556f53847939f1384639a863d4c2)) by @Vaishnav-Sabari-Girish
+
 - **(readme update)** Updated README - ([7310b14](https://github.com/NextStd/ns_io/commit/7310b143a6c8637d3a20419f3d86b7d5b580a847)) by @Vaishnav-Sabari-Girish
 
 - **(cl update)** Updated CHANGELOG - ([08b78f9](https://github.com/NextStd/ns_io/commit/08b78f9635290220a3f487fe9df0df0bf3d8309a)) by @Vaishnav-Sabari-Girish

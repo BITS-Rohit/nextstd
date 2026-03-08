@@ -6,8 +6,10 @@ BIN_DIR = bin
 EXAMPLE_DIR = examples
 
 # Flags
-INCLUDES = -I.
-LIBS = -L$(RUST_DIR) -lns_io -lpthread -ldl -lm -Wl,-rpath=$(RUST_DIR)
+# UPDATED: Added -Iinclude so C finds your new header folder
+INCLUDES = -I. -Iinclude
+# UPDATED: Added -lns_strings to link the new Rust crate
+LIBS = -L$(RUST_DIR) -lns_io -lns_string -lpthread -ldl -lm -Wl,-rpath=$(RUST_DIR)
 
 EXAMPLES = $(patsubst $(EXAMPLE_DIR)/%.c,%,$(wildcard $(EXAMPLE_DIR)/*.c))
 
@@ -30,7 +32,8 @@ list:
 	@echo "  make <name>   : Compile & Run (e.g., 'make 01_print_integer')"
 
 # THE MAIN RULE
-%: $(EXAMPLE_DIR)/%.c ns.h rust directories
+# UPDATED: Changed ns.h to include/ns.h
+%: $(EXAMPLE_DIR)/%.c include/ns.h rust directories
 	@$(CC) $(CFLAGS) $< -o $(BIN_DIR)/$@ $(INCLUDES) $(LIBS)
 	@./$(BIN_DIR)/$@
 	@$(MAKE) -s clean-bin

@@ -1,0 +1,12 @@
+[package]
+name = "ns_string"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+
+[lib]
+crate-type = ["lib", "staticlib", "cdylib"]
+
+[dependencies]
+
+
