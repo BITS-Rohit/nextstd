@@ -4,7 +4,7 @@
 
 [remote.github]
 owner = "NextStd"
-repo = "ns_io"
+repo = "nextstd"
 
 [changelog]
 # A Tera template to be rendered for each release in the changelog.
