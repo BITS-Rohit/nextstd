@@ -24,6 +24,8 @@
 
 ### :bug: Bug fixes
 
+- **(repo name)** Put correct repo name in cliff.toml - ([1b83778](https://github.com/NextStd/nextstd/commit/1b83778a971a54f910286ad035173df730fe1ebd)) by @Vaishnav-Sabari-Girish
+
 - **(cliff.toml)** Bug in cliff.toml - ([cac0a5f](https://github.com/NextStd/nextstd/commit/cac0a5f21767ce01fea613b49f5075a691ad39f6)) by @Vaishnav-Sabari-Girish
 
 - **(typo)** Typo in actions caused failure - ([8e007fb](https://github.com/NextStd/nextstd/commit/8e007fbae0e966074a4f02c98db9dfbc3beee2be)) by @Vaishnav-Sabari-Girish
@@ -73,6 +75,8 @@
 
 
 ### :wrench: Miscellaneous
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([0b4c1e2](https://github.com/NextStd/nextstd/commit/0b4c1e24085db734b9f9752e2fea726bd396f70f)) by @github-actions[bot]
 
 - **(changelog)** Update CHANGELOG.md for main [skip ci] - ([90979f9](https://github.com/NextStd/nextstd/commit/90979f937df54463a19e60293881e2e33f34a3b6)) by @github-actions[bot]
 
