@@ -75,10 +75,14 @@
 
 ### :zap: Performance
 
+- **(io)** Optimize string printing with direct ns_string memory access - ([a199b07](https://github.com/NextStd/nextstd/commit/a199b0767a802967609284fd9416dc54db91796a)) by @Vaishnav-Sabari-Girish
+
 - **(Makefile update)** No need to recompile the whole lib - ([37487e7](https://github.com/NextStd/nextstd/commit/37487e79ed03cc2975fcd1e930dffd305a8d5b6d)) by @Vaishnav-Sabari-Girish
 
 
 ### :wrench: Miscellaneous
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([374d72d](https://github.com/NextStd/nextstd/commit/374d72d3499d7200d5859bd0b97e525275dc514b)) by @github-actions[bot]
 
 - **(changelog)** Update CHANGELOG.md for main [skip ci] - ([d8b1666](https://github.com/NextStd/nextstd/commit/d8b166601f4d6cc8813bbcd6a19449a6fa500142)) by @github-actions[bot]
 
