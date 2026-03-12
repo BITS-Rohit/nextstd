@@ -82,6 +82,8 @@
 
 ### :wrench: Miscellaneous
 
+- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([f93ff1b](https://github.com/NextStd/nextstd/commit/f93ff1b382662193c7c021d2ecc88f221b98f558)) by @github-actions[bot]
+
 - **(changelog)** Update CHANGELOG.md for main [skip ci] - ([374d72d](https://github.com/NextStd/nextstd/commit/374d72d3499d7200d5859bd0b97e525275dc514b)) by @github-actions[bot]
 
 - **(changelog)** Update CHANGELOG.md for main [skip ci] - ([d8b1666](https://github.com/NextStd/nextstd/commit/d8b166601f4d6cc8813bbcd6a19449a6fa500142)) by @github-actions[bot]
@@ -104,6 +106,8 @@
 
 
 ### :art: Styling
+
+- **(bump)** Bumped version from 0.1.6 to 0.1.7 - ([87c4408](https://github.com/NextStd/nextstd/commit/87c4408bd41d8e3f47a35e7e1d09f8b02122d0a5)) by @Vaishnav-Sabari-Girish
 
 - **(cliff.toml)** Update cliff.toml with CI section - ([e023e56](https://github.com/NextStd/nextstd/commit/e023e56f02a512fd816dbbce7df00d4f7311da50)) by @Vaishnav-Sabari-Girish
 
