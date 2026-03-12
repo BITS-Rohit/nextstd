@@ -1,5 +1,5 @@
+use std::ffi::{c_double, c_float, c_int};
 use std::io::{self};
-use std::ffi::{c_int, c_float,c_double};
 
 // Helper function to read a line from stdin safely
 fn read_line_buffer() -> String {
@@ -12,7 +12,7 @@ fn read_line_buffer() -> String {
 
 // Read Integer
 #[unsafe(no_mangle)]
-/// # Safety 
+/// # Safety
 ///
 /// This function reads an integer input
 pub unsafe extern "C" fn ns_read_int(ptr: *mut c_int) {
@@ -25,17 +25,17 @@ pub unsafe extern "C" fn ns_read_int(ptr: *mut c_int) {
     // Try to parse. If it fails, default to 0
     let val: c_int = input.parse().unwrap_or(0);
 
-    // Unsafe: Write value to C memory address 
+    // Unsafe: Write value to C memory address
     unsafe {
         *ptr = val;
     }
 }
 
-// Read float 
+// Read float
 #[unsafe(no_mangle)]
-/// # Safety 
+/// # Safety
 ///
-/// This function reads a floating point input 
+/// This function reads a floating point input
 pub unsafe extern "C" fn ns_read_float(ptr: *mut c_float) {
     if ptr.is_null() {
         return;
@@ -46,17 +46,17 @@ pub unsafe extern "C" fn ns_read_float(ptr: *mut c_float) {
     // Try to parse. If it fails, default to 0
     let val: c_float = input.parse().unwrap_or(0.0);
 
-    // Unsafe: Write value to C memory address 
+    // Unsafe: Write value to C memory address
     unsafe {
         *ptr = val;
     }
 }
 
-// Read double 
+// Read double
 #[unsafe(no_mangle)]
-/// # Safety 
+/// # Safety
 ///
-/// This function reads a double input 
+/// This function reads a double input
 pub unsafe extern "C" fn ns_read_double(ptr: *mut c_double) {
     if ptr.is_null() {
         return;
@@ -67,9 +67,8 @@ pub unsafe extern "C" fn ns_read_double(ptr: *mut c_double) {
     // Try to parse. If it fails, default to 0
     let val: c_double = input.parse().unwrap_or(0.0);
 
-    // Unsafe: Write value to C memory address 
+    // Unsafe: Write value to C memory address
     unsafe {
         *ptr = val;
     }
 }
-

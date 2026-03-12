@@ -1,11 +1,11 @@
-use std::ffi::CStr;
-use std::os::raw::c_char;
-use std::io::{self, Write};
 use ns_string::NsString;
+use std::ffi::CStr;
+use std::io::{self, Write};
+use std::os::raw::c_char;
 
 // No Newline functions
 
-// Print Integer 
+// Print Integer
 #[unsafe(no_mangle)]
 pub extern "C" fn ns_print_int(val: i32) {
     // Adds newline by default
@@ -13,7 +13,7 @@ pub extern "C" fn ns_print_int(val: i32) {
     io::stdout().flush().unwrap();
 }
 
-// Print Float 
+// Print Float
 #[unsafe(no_mangle)]
 pub extern "C" fn ns_print_float(val: f32) {
     // Adds newline by default
@@ -21,20 +21,19 @@ pub extern "C" fn ns_print_float(val: f32) {
     io::stdout().flush().unwrap();
 }
 
-// Print Double 
+// Print Double
 #[unsafe(no_mangle)]
 pub extern "C" fn ns_print_double(val: f64) {
-    // Adds newline by default 
+    // Adds newline by default
     print!("{}", val);
     io::stdout().flush().unwrap();
 }
-
 
 // Print String
 #[unsafe(no_mangle)]
 // If the C string is not null terminaltes '\0' , the function will keep on reading memory until
 // the program crashes (Segfault)
-// The below suppression is to prevent that 
+// The below suppression is to prevent that
 #[allow(clippy::not_unsafe_ptr_arg_deref)]
 pub extern "C" fn ns_print_string(ptr: *const c_char) {
     // Never Dereference a NULL pointer
@@ -44,9 +43,7 @@ pub extern "C" fn ns_print_string(ptr: *const c_char) {
         return;
     }
 
-    let c_str = unsafe {
-        CStr::from_ptr(ptr)
-    };
+    let c_str = unsafe { CStr::from_ptr(ptr) };
 
     // Converting to Rust String
     // "to_string_lossy()" is best if the string has non-UTF-8 characters
@@ -56,33 +53,32 @@ pub extern "C" fn ns_print_string(ptr: *const c_char) {
 }
 
 // Newline functions
-// Print Integer 
+// Print Integer
 #[unsafe(no_mangle)]
 pub extern "C" fn ns_println_int(val: i32) {
     // Adds newline by default
     println!("{}", val);
 }
 
-// Print Float 
+// Print Float
 #[unsafe(no_mangle)]
 pub extern "C" fn ns_println_float(val: f32) {
     // Adds newline by default
     println!("{}", val);
 }
 
-// Print Double 
+// Print Double
 #[unsafe(no_mangle)]
 pub extern "C" fn ns_println_double(val: f64) {
-    // Adds newline by default 
+    // Adds newline by default
     println!("{}", val);
 }
-
 
 // Print String
 #[unsafe(no_mangle)]
 // If the C string is not null terminaltes '\0' , the function will keep on reading memory until
 // the program crashes (Segfault)
-// The below suppression is to prevent that 
+// The below suppression is to prevent that
 #[allow(clippy::not_unsafe_ptr_arg_deref)]
 pub extern "C" fn ns_println_string(ptr: *const c_char) {
     // Never Dereference a NULL pointer
@@ -91,9 +87,7 @@ pub extern "C" fn ns_println_string(ptr: *const c_char) {
         return;
     }
 
-    let c_str = unsafe {
-        CStr::from_ptr(ptr)
-    };
+    let c_str = unsafe { CStr::from_ptr(ptr) };
 
     // Converting to Rust String
     // "to_string_lossy()" is best if the string has non-UTF-8 characters
@@ -106,13 +100,9 @@ pub extern "C" fn ns_println_string(ptr: *const c_char) {
 #[unsafe(no_mangle)]
 pub extern "C" fn ns_print_ns_string(val: NsString) {
     let bytes = if val.is_heap {
-        unsafe {
-            std::slice::from_raw_parts(val.data.heap.ptr, val.len)
-        }
+        unsafe { std::slice::from_raw_parts(val.data.heap.ptr, val.len) }
     } else {
-        unsafe {
-            &val.data.inline_data[..val.len]
-        }
+        unsafe { &val.data.inline_data[..val.len] }
     };
 
     // COnvert to rust string (To handle non-UTF-8)
@@ -123,17 +113,13 @@ pub extern "C" fn ns_print_ns_string(val: NsString) {
     io::stdout().flush().unwrap();
 }
 
-// Newline 
+// Newline
 #[unsafe(no_mangle)]
 pub extern "C" fn ns_println_ns_string(val: NsString) {
     let bytes = if val.is_heap {
-        unsafe {
-            std::slice::from_raw_parts(val.data.heap.ptr, val.len)
-        }
+        unsafe { std::slice::from_raw_parts(val.data.heap.ptr, val.len) }
     } else {
-        unsafe {
-            &val.data.inline_data[..val.len]
-        }
+        unsafe { &val.data.inline_data[..val.len] }
     };
 
     // COnvert to rust string (To handle non-UTF-8)
@@ -142,4 +128,3 @@ pub extern "C" fn ns_println_ns_string(val: NsString) {
     // Print and flush
     println!("{}", rust_str);
 }
-

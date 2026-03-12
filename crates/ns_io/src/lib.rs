@@ -1,3 +1,3 @@
-// Print Module 
-pub mod print;
+// Print Module
 pub mod input;
+pub mod print;

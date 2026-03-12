@@ -1,19 +1,19 @@
 use std::ffi::CStr;
-use std::os::raw::c_char;
 use std::mem::ManuallyDrop;
+use std::os::raw::c_char;
 
 // Heap allocation
 #[repr(C)]
 pub struct NsStringHeap {
     pub ptr: *mut u8,
-    pub capacity: usize
+    pub capacity: usize,
 }
 
 // Union: 24 bytes of inline chars or the heap struct
 #[repr(C)]
 pub union NsStringData {
     pub inline_data: [u8; 24],
-    pub heap: ManuallyDrop<NsStringHeap>, 
+    pub heap: ManuallyDrop<NsStringHeap>,
 }
 
 // Final string struct
@@ -21,7 +21,7 @@ pub union NsStringData {
 pub struct NsString {
     pub len: usize,
     pub is_heap: bool,
-    pub data: NsStringData
+    pub data: NsStringData,
 }
 
 #[allow(clippy::not_unsafe_ptr_arg_deref)]
@@ -31,13 +31,13 @@ pub extern "C" fn ns_string_new(c_str: *const c_char) -> NsString {
         return NsString {
             len: 0,
             is_heap: false,
-            data: NsStringData { inline_data: [0; 24] }
+            data: NsStringData {
+                inline_data: [0; 24],
+            },
         };
     }
 
-    let rust_str = unsafe {
-        CStr::from_ptr(c_str)
-    }.to_bytes();
+    let rust_str = unsafe { CStr::from_ptr(c_str) }.to_bytes();
 
     let len = rust_str.len();
 
@@ -49,7 +49,9 @@ pub extern "C" fn ns_string_new(c_str: *const c_char) -> NsString {
         NsString {
             len,
             is_heap: false,
-            data: NsStringData { inline_data: inline }
+            data: NsStringData {
+                inline_data: inline,
+            },
         }
     } else {
         // If it is more than 24 bytes, put it on the heap
@@ -67,11 +69,8 @@ pub extern "C" fn ns_string_new(c_str: *const c_char) -> NsString {
         NsString {
             len,
             is_heap: true,
-            data: NsStringData { 
-                heap: ManuallyDrop::new(NsStringHeap {
-                    ptr, 
-                    capacity
-                })
+            data: NsStringData {
+                heap: ManuallyDrop::new(NsStringHeap { ptr, capacity }),
             },
         }
     }
@@ -84,9 +83,7 @@ pub extern "C" fn ns_string_free(s: *mut NsString) {
         return;
     }
 
-    let s_ref = unsafe {
-        &mut *s
-    };
+    let s_ref = unsafe { &mut *s };
 
     if s_ref.is_heap {
         unsafe {
