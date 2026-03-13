@@ -8,5 +8,6 @@ authors.workspace = true
 crate-type = ["lib", "staticlib", "cdylib"]
 
 [dependencies]
+ns_error = {  path = "../ns_error" }
 
 

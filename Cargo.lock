@@ -4,14 +4,14 @@ version = 4
 
 [[package]]
 name = "ns_error"
-version = "0.1.7"
+version = "0.1.8"
 dependencies = [
  "thiserror",
 ]
 
 [[package]]
 name = "ns_io"
-version = "0.1.7"
+version = "0.1.8"
 dependencies = [
  "ns_error",
  "ns_string",
@@ -19,7 +19,10 @@ dependencies = [
 
 [[package]]
 name = "ns_string"
-version = "0.1.7"
+version = "0.1.8"
+dependencies = [
+ "ns_error",
+]
 
 [[package]]
 name = "proc-macro2"
