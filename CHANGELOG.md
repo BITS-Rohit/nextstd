@@ -1,6 +1,8 @@
 
 ### :rocket: New features
 
+- **(core)** Add ns_error compatibility with ns_string - ([a8a13a8](https://github.com/NextStd/nextstd/commit/a8a13a8eb5f07f0102d798ebb8328d08482d3207)) by @Vaishnav-Sabari-Girish
+
 - **(add colors)** Added terminal colors - ([548e0fb](https://github.com/NextStd/nextstd/commit/548e0fb3690a5cc4448e8d9eae1a3dc97531ab9b)) by @Vaishnav-Sabari-Girish
 
 - **(add ns_error_t)** Custom error type - ([03f09c9](https://github.com/NextStd/nextstd/commit/03f09c933ed9b9a48e8eec9aa4a4039833760677)) by @Vaishnav-Sabari-Girish
@@ -88,6 +90,8 @@
 
 ### :wrench: Miscellaneous
 
+- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([5a49141](https://github.com/NextStd/nextstd/commit/5a49141c62c7aa06085aa2b4d4c6bd948ebbd25a)) by @github-actions[bot]
+
 - **(changelog)** Update CHANGELOG.md for main [skip ci] - ([8b378e3](https://github.com/NextStd/nextstd/commit/8b378e31bf0d46d710a0debe8a98644a75e02ec4)) by @github-actions[bot]
 
 - **(changelog)** Update CHANGELOG.md for main [skip ci] - ([b911eff](https://github.com/NextStd/nextstd/commit/b911effd073b55f48294a1c5469e792db7b55aa9)) by @github-actions[bot]
@@ -132,6 +136,10 @@
 
 
 ### :twisted_rightwards_arrows: Pull Requests
+
+- Merge pull request #9 from NextStd/error/add_ns_error_to_ns_string
+
+feat(core): add ns_error compatibility with ns_string - ([4818cb7](https://github.com/NextStd/nextstd/commit/4818cb714b128de92966bffc2e7b0fa6e6ddb9f6)) in [#9](https://github.com/NextStd/nextstd/pull/9) by @Vaishnav-Sabari-Girish
 
 - Merge pull request #8 from NextStd/color/color_ansi
 
