@@ -92,6 +92,8 @@
 
 ### :wrench: Miscellaneous
 
+- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([0bf9f2a](https://github.com/NextStd/nextstd/commit/0bf9f2aa5bacc6541f79ae89cb9ac4f568a000c0)) by @github-actions[bot]
+
 - **(changelog)** Update CHANGELOG.md for main [skip ci] - ([be5db63](https://github.com/NextStd/nextstd/commit/be5db638fa6cb1a001258dc207aa7f39e6cd7d02)) by @github-actions[bot]
 
 - **(changelog)** Update CHANGELOG.md for main [skip ci] - ([1f92a9a](https://github.com/NextStd/nextstd/commit/1f92a9a0439f4a8485e28c1657cf2f8b9f38bf23)) by @github-actions[bot]
@@ -142,6 +144,10 @@
 
 
 ### :white_check_mark: Testing
+
+- **(pre-commit)** Testing latest pre-commit hook - ([560e92e](https://github.com/NextStd/nextstd/commit/560e92e85830b15e95c8e5ff1554d32ec58d54a6)) by @Vaishnav-Sabari-Girish
+
+- **(pre-commit)** Testing latest pre-commit hook - ([2c30248](https://github.com/NextStd/nextstd/commit/2c30248a04f9218a189dc5caf89670b1b3a10480)) by @Vaishnav-Sabari-Girish
 
 - **(examples update)** Updated examples with latest functions - ([1deb48b](https://github.com/NextStd/nextstd/commit/1deb48b01b2763ba0bcf311e3cde2fcd38b42de9)) by @Vaishnav-Sabari-Girish
 
