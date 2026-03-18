@@ -1,6 +1,18 @@
 
 ### :rocket: New features
 
+- **(ns_data)** Add safe hashmap and update string docs - ([f906575](https://github.com/NextStd/nextstd/commit/f906575393f51938b7f8a55e40e2f264b3a68e84)) by @Vaishnav-Sabari-Girish
+
+
+### :twisted_rightwards_arrows: Pull Requests
+
+- Merge pull request #12 from NextStd/feat/ns_data_hashmaps
+
+feat(ns_data): add safe hashmap and update string docs - ([41c347c](https://github.com/NextStd/nextstd/commit/41c347c747ba837fc0a56a1334ffc84680cdca90)) in [#12](https://github.com/NextStd/nextstd/pull/12) by @Vaishnav-Sabari-Girish
+
+
+### :rocket: New features
+
 - **(ns_data)** Introduce safe dynamic arrays (ns_vec) - ([c5b036b](https://github.com/NextStd/nextstd/commit/c5b036b44f8b960c3f5985675889fc2d48ebd8d0)) by @Vaishnav-Sabari-Girish
 
 - **(core)** Add ns_error compatibility with ns_string - ([a8a13a8](https://github.com/NextStd/nextstd/commit/a8a13a8eb5f07f0102d798ebb8328d08482d3207)) by @Vaishnav-Sabari-Girish
@@ -108,6 +120,8 @@
 
 
 ### :wrench: Miscellaneous
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([c4872f9](https://github.com/NextStd/nextstd/commit/c4872f9d5187c423f193a5aea957b4579013d6c5)) by @github-actions[bot]
 
 - **(changelog)** Update CHANGELOG.md for main [skip ci] - ([febb107](https://github.com/NextStd/nextstd/commit/febb1071077bcff99d9cc1ca4d9c43fdb5cd7968)) by @github-actions[bot]
 
