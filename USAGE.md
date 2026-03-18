@@ -85,10 +85,6 @@ int main() {
 }
 ```
 
-> [!IMPORTANT]
-> `ns_read()` cannot handle `ns_string()` for now. This will be added in future
-> versions.
-
 ## Safe Dynamic Arrays (`ns_vec`)
 
 Standard C arrays are fixed-size, and manually managing dynamic arrays with
