@@ -62,6 +62,8 @@
 
 ### :page_facing_up: Documentation
 
+- **(Updated README.md)** And BUILD.md and USAGE.md - ([ae72381](https://github.com/NextStd/nextstd/commit/ae723816306bc77806319f8a06f98af724c51d21)) by @Vaishnav-Sabari-Girish
+
 - **(version update)** Updated version in README - ([113972c](https://github.com/NextStd/nextstd/commit/113972c8272a670a3ac0aa08acf3a000577a22a5)) by @Vaishnav-Sabari-Girish
 
 - **(readme)** Add USAGE and BUILD instructions - ([3120591](https://github.com/NextStd/nextstd/commit/3120591d37a993776e8104712c377f0db358e712)) by @Vaishnav-Sabari-Girish
@@ -95,6 +97,8 @@
 
 
 ### :wrench: Miscellaneous
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([227019e](https://github.com/NextStd/nextstd/commit/227019ee2416bcc11e00bdb97bab60333b057939)) by @github-actions[bot]
 
 - **(changelog)** Update CHANGELOG.md for main [skip ci] - ([631a8c0](https://github.com/NextStd/nextstd/commit/631a8c05c5c54f779a4ae03eeee99dfca3d35f1e)) by @github-actions[bot]
 
