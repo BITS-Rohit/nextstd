@@ -92,6 +92,8 @@
 
 ### :wrench: Miscellaneous
 
+- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([be5db63](https://github.com/NextStd/nextstd/commit/be5db638fa6cb1a001258dc207aa7f39e6cd7d02)) by @github-actions[bot]
+
 - **(changelog)** Update CHANGELOG.md for main [skip ci] - ([1f92a9a](https://github.com/NextStd/nextstd/commit/1f92a9a0439f4a8485e28c1657cf2f8b9f38bf23)) by @github-actions[bot]
 
 - **(changelog)** Update CHANGELOG.md for main [skip ci] - ([5a49141](https://github.com/NextStd/nextstd/commit/5a49141c62c7aa06085aa2b4d4c6bd948ebbd25a)) by @github-actions[bot]
@@ -146,6 +148,10 @@
 
 ### :twisted_rightwards_arrows: Pull Requests
 
+- Merge pull request #11 from NextStd/install/install_header_and_library
+
+build(install): Make install now installs to system - ([0376af0](https://github.com/NextStd/nextstd/commit/0376af025ddff327c38e37c3c139252be3e1fba6)) in [#11](https://github.com/NextStd/nextstd/pull/11) by @Vaishnav-Sabari-Girish
+
 - Merge pull request #10 from NextStd/feat/ns_data_vector
 
 Feat/ns data vector - ([c0fdb7c](https://github.com/NextStd/nextstd/commit/c0fdb7cf673864adc070c4d1932c826faa1ba411)) in [#10](https://github.com/NextStd/nextstd/pull/10) by @Vaishnav-Sabari-Girish
@@ -196,6 +202,8 @@ Feat/add float print - ([882c990](https://github.com/NextStd/nextstd/commit/882c
 
 
 ### :hammer: Build
+
+- **(install)** Make install now installs to system - ([0355c46](https://github.com/NextStd/nextstd/commit/0355c469e3669f39cd4f2c53aaeca8f12fa6b262)) by @Vaishnav-Sabari-Girish
 
 - **(bump nextstd version)** Bumped from 0.1.7 to 0.1.8 - ([a617da5](https://github.com/NextStd/nextstd/commit/a617da58e36727fe56bf3d85d59ec89276dc8d11)) by @Vaishnav-Sabari-Girish
 
