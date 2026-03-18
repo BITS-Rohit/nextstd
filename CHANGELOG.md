@@ -24,10 +24,14 @@
 
 ### :page_facing_up: Documentation
 
+- **(version)** Updated to 0.2.1
+
 - **(cliff.toml)** Updated cliff.toml
 
 
 ### :wrench: Miscellaneous
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci]
 
 - **(changelog)** Update CHANGELOG.md for main [skip ci]
 
