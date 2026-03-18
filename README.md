@@ -11,7 +11,7 @@ macro-driven **C API**.
 
 View the [CHANGELOG.md](./CHANGELOG.md)
 
-![version](https://img.shields.io/badge/version-0.1.7-blue)
+![version](https://img.shields.io/badge/version-0.2.0-blue)
 
 ## Features
 
