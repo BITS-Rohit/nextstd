@@ -4,6 +4,16 @@
 - **(ns_data)** Add safe hashmap and update string docs - ([f906575](https://github.com/NextStd/nextstd/commit/f906575393f51938b7f8a55e40e2f264b3a68e84)) by @Vaishnav-Sabari-Girish
 
 
+### :bug: Bug fixes
+
+- **(string)** String printing bug - ([704ad3c](https://github.com/NextStd/nextstd/commit/704ad3c554041895745014220e59610cecb4f0ca)) by @Vaishnav-Sabari-Girish
+
+
+### :wrench: Miscellaneous
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([e97f7d1](https://github.com/NextStd/nextstd/commit/e97f7d14c90966a92960c3743c6a9d33c2878a56)) by @github-actions[bot]
+
+
 ### :twisted_rightwards_arrows: Pull Requests
 
 - Merge pull request #12 from NextStd/feat/ns_data_hashmaps
