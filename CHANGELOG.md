@@ -15,6 +15,8 @@
 
 ### :construction_worker: CI
 
+- **(changelog)** Updated CHANGELOG generator
+
 - **(tags)** Testing again
 
 - **(tags)** Tags with headings
@@ -30,6 +32,8 @@
 
 
 ### :wrench: Miscellaneous
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci]
 
 - **(changelog)** Update CHANGELOG.md for main [skip ci]
 
