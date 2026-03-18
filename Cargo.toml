@@ -3,12 +3,12 @@ resolver = "2"
 members = [
   "crates/ns_io",
   "crates/ns_string",
-  "crates/ns_error"
-  # "crates/ns_data"
+  "crates/ns_error",
+  "crates/ns_data"
 ]
 
 # Shared metadata
 [workspace.package]
-version = "0.1.8"
+version = "0.2.0"
 edition = "2024"
 authors = ["Vaishnav Sabari Girish"]

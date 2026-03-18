@@ -1,0 +1,11 @@
+[package]
+name = "ns_data"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+
+[dependencies]
+ns_error = { path = "../ns_error" }
+
+[lib]
+crate-type = ["lib", "staticlib", "cdylib"]

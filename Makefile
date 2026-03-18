@@ -9,7 +9,7 @@ EXAMPLE_DIR = examples
 # UPDATED: Added -Iinclude so C finds your new header folder
 INCLUDES = -I. -Iinclude
 # UPDATED: Added -lns_strings to link the new Rust crate
-LIBS = -L$(RUST_DIR) -lns_io -lns_string -lpthread -ldl -lm -Wl,-rpath=$(RUST_DIR)
+LIBS = -L$(RUST_DIR) -lns_data -lns_io -lns_string -lns_error -lpthread -ldl -lm -Wl,-rpath=$(RUST_DIR)
 
 EXAMPLES = $(patsubst $(EXAMPLE_DIR)/%.c,%,$(wildcard $(EXAMPLE_DIR)/*.c))
 
