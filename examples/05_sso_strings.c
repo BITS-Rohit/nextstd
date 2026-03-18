@@ -3,10 +3,12 @@
 int main()
 {
   // String less than 24 bytes (No heap allocation)
-  ns_string short_str = ns_string_new("Hello");
+  ns_string short_str;
+  ns_string_new(&short_str, "Hello");
 
   // Long string (Heap allocation)
-  ns_string long_str = ns_string_new("This is a much longer string which will be heap allocated automatically");
+  ns_string long_str;
+  ns_string_new(&long_str, "This is a much longer string which will be heap allocated automatically");
 
   // Print them
   ns_print("Short string: ");
