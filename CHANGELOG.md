@@ -3,7 +3,14 @@
 
 
 
+### :bug: Bug fixes
+
+- **(error)** Better error handling
+
+
 ### :wrench: Miscellaneous
+
+- **(changelog)** Update CHANGELOG.md for v0.2.1 [skip ci]
 
 - **(changelog)** Update CHANGELOG.md for main [skip ci]
 
