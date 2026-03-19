@@ -3,6 +3,11 @@
 
 
 
+### :rocket: New features
+
+- **(bool)** Add Boolean read and print
+
+
 ### :bug: Bug fixes
 
 - **(error)** Better error handling
@@ -18,6 +23,8 @@
 
 
 ### :wrench: Miscellaneous
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci]
 
 - **(changelog)** Update CHANGELOG.md for main [skip ci]
 
