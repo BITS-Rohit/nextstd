@@ -8,7 +8,14 @@
 - **(error)** Better error handling
 
 
+### :page_facing_up: Documentation
+
+- **(badges)** Added badges for actions and made version badge dynamic
+
+
 ### :wrench: Miscellaneous
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci]
 
 - **(changelog)** Update CHANGELOG.md for v0.2.1 [skip ci]
 
