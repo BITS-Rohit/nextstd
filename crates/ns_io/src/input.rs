@@ -1,6 +1,8 @@
 use ns_error::NsError;
-use std::ffi::{c_double, c_float, c_int};
-use std::io::{self, Write}; // <-- Added Write here!
+use ns_string::NsString;
+use std::ffi::{CString, c_double, c_float, c_int};
+use std::io::{self, Write};
+use std::os::raw::c_char;
 
 // Helper function to read a line from stdin safely
 fn read_line_buffer() -> Result<String, NsError> {
@@ -137,5 +139,31 @@ pub unsafe extern "C" fn ns_read_bool(out: *mut bool) -> NsError {
             NsError::Success
         }
         _ => NsError::InvalidInput,
+    }
+}
+
+unsafe extern "C" {
+    fn ns_string_new(dest: *mut NsString, c_str: *const c_char) -> NsError;
+}
+
+/// Read NextStd String
+///
+/// # Safety
+///
+/// This function reads dynamic input and routes it through
+/// NextStd's native string initializer to ensure SSO
+/// and heap boundaries are respected safetly
+#[unsafe(no_mangle)]
+pub unsafe extern "C" fn ns_read_ns_string(ptr: *mut NsString) -> NsError {
+    if ptr.is_null() {
+        return NsError::Any;
+    }
+
+    match read_line_buffer() {
+        Ok(input) => match CString::new(input) {
+            Ok(c_str) => unsafe { ns_string_new(ptr, c_str.as_ptr()) },
+            Err(_) => NsError::InvalidInput,
+        },
+        Err(e) => e,
     }
 }
