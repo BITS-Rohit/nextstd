@@ -3,9 +3,19 @@
 
 
 
+### :rocket: New features
+
+- **(ns_string)** Add `ns_read` support for `ns_string`
+
+
 ### :construction_worker: CI
 
 - **(trigger)** Trigger build
+
+
+### :wrench: Miscellaneous
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci]
 
 
 ## v0.2.3 - 2026-03-20
