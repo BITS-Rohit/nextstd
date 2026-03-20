@@ -10,5 +10,6 @@
 #define NS_COLOR_MAGENTA "\x1b[35m"
 #define NS_COLOR_CYAN    "\x1b[36m"
 #define NS_COLOR_BOLD    "\x1b[1m"
+#define NS_COLOR_UNDERLINE "\033[4m" 
 
 #endif // !NS_COLOR_H
