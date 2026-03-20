@@ -1,7 +1,8 @@
 #ifndef NS_PRINT_H
 #define NS_PRINT_H
 
-#include "ns_string.h" // Needs to know about ns_string
+#include <stddef.h>
+#include "ns_string.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -13,6 +14,7 @@ extern "C" {
   void ns_print_float(float val);
   void ns_print_double(double val);
   void ns_print_bool(_Bool val);
+  void ns_print_size_t(size_t val);
   void ns_print_string(const char* val);
   void ns_print_ns_string(ns_string val); 
 
@@ -21,6 +23,7 @@ extern "C" {
   void ns_println_float(float val);
   void ns_println_double(double val);
   void ns_println_bool(_Bool val);
+  void ns_println_size_t(size_t val);
   void ns_println_string(const char* val);
   void ns_println_ns_string(ns_string val);
 
@@ -30,6 +33,7 @@ extern "C" {
     float: ns_print_float, \
     double: ns_print_double, \
     _Bool: ns_print_bool, \
+    size_t: ns_print_size_t, \
     char*: ns_print_string, \
     const char*: ns_print_string, \
     ns_string: ns_print_ns_string \
@@ -41,6 +45,7 @@ extern "C" {
     float: ns_println_float, \
     double: ns_println_double, \
     _Bool: ns_println_bool, \
+    size_t: ns_println_size_t, \
     char*: ns_println_string, \
     const char*: ns_println_string, \
     ns_string: ns_println_ns_string \

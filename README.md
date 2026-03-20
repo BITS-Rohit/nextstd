@@ -40,11 +40,13 @@ View the [CHANGELOG.md](./CHANGELOG.md)
 - [x] Float/Double Printing (`float` / `double`)
 - [x] Standard C String Printing (`char*`)
 - [x] Type-Safe SSO Strings (`ns_string`)
+- [x] Printing length of string
 - [x] Separate `print` and `println` functions
 - [x] Cargo Workspace Architecture
 - [x] User Input via `ns_read()`
 - [x] Custom Error types (`ns_error_t`)
 - [x] Safe Dynamic Arrays (`ns_vec`)
+- [x] Adding HashMaps (`ns_map`)
 - [ ] Printing Variables + Strings (Interpolation/Formatting)
 
 ## Installation (System-Wide)

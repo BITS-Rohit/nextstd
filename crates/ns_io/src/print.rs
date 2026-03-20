@@ -152,3 +152,17 @@ pub extern "C" fn ns_println_bool(val: bool) {
         println!("false");
     }
 }
+
+// Printing size_t
+// No Newline
+#[unsafe(no_mangle)]
+pub extern "C" fn ns_print_size_t(val: usize) {
+    print!("{}", val);
+    io::stdout().flush().unwrap();
+}
+
+// Newline
+#[unsafe(no_mangle)]
+pub extern "C" fn ns_println_size_t(val: usize) {
+    println!("{}", val);
+}
