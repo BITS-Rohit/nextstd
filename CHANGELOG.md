@@ -10,10 +10,14 @@
 
 ### :page_facing_up: Documentation
 
+- **(ROADMAP)** Add C++ support for last phase
+
 - **(roadmap)** Add ROADMAP.md
 
 
 ### :wrench: Miscellaneous
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci]
 
 - **(changelog)** Update CHANGELOG.md for main [skip ci]
 
