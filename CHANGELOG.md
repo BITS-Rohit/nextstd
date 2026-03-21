@@ -8,6 +8,21 @@
 - **(trigger)** Trigger build
 
 
+### :wrench: Miscellaneous
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci]
+
+
+### :twisted_rightwards_arrows: Pull Requests
+
+- Merge branch 'main' of github.com:NextStd/nextstd
+
+
+### :hammer: Build
+
+- **(root)** Removed the hardcoded root commands
+
+
 ## v0.2.5 - 2026-03-21
 
 
