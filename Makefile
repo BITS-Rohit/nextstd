@@ -50,24 +50,28 @@ list:
 
 # --- Install Rules ---
 
-install: rust
+install:
+	@if [ ! -f $(RUST_DIR)/libns_io.a ]; then \
+		echo "Error: Rust binaries not found. Please run 'make rust' first."; \
+		exit 1; \
+	fi
 	@echo "Installing NextStd headers to $(INCLUDE_DIR)..."
-	@sudo install -d $(INCLUDE_DIR)
-	@sudo cp -r include/* $(INCLUDE_DIR)/
+	@install -d $(INCLUDE_DIR)
+	@cp -r include/* $(INCLUDE_DIR)/
 	@echo "Installing NextStd libraries to $(LIB_DIR)..."
-	@sudo install -d $(LIB_DIR)
-	@sudo install -m 644 $(LIBS_TO_INSTALL) $(LIB_DIR)/
+	@install -d $(LIB_DIR)
+	@install -m 644 $(LIBS_TO_INSTALL) $(LIB_DIR)/
 	@echo "Installation complete!"
 	@echo "You can now include headers in any project using: #include <nextstd/ns.h>"
 
 uninstall:
 	@echo "Removing NextStd headers from $(INCLUDE_DIR)..."
-	@sudo rm -rf $(INCLUDE_DIR)
+	@rm -rf $(INCLUDE_DIR)
 	@echo "Removing NextStd libraries from $(LIB_DIR)..."
-	@sudo rm -f $(LIB_DIR)/libns_data.a \
-	            $(LIB_DIR)/libns_io.a \
-	            $(LIB_DIR)/libns_string.a \
-	            $(LIB_DIR)/libns_error.a
+	@rm -f $(LIB_DIR)/libns_data.a \
+	       $(LIB_DIR)/libns_io.a \
+	       $(LIB_DIR)/libns_string.a \
+	       $(LIB_DIR)/libns_error.a
 	@echo "Uninstallation complete!"
 
 # --- Clean Rules ---
