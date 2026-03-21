@@ -31,9 +31,9 @@ for production use.
 
 These features will finalize the core `ns_io` and `ns_string` modules.
 
-* [ ] **String Interpolation & Formatting:** Introduce Python/Rust-style string
+* [x] **String Interpolation & Formatting:** Introduce Python/Rust-style string
       formatting to eliminate the need for `sprintf`.
-  * *Concept:* `ns_println("Value: {val}");`
+  * *Concept:* `ns_println("Value: {}", val);`
 
 ## Phase 2: Process Execution (`ns_cmd` & `ns_process`)
 

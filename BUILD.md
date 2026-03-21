@@ -7,7 +7,7 @@ You will need the following tools installed to build `NextStd`:
 1. **Rust & Cargo** (For compiling the backend):
 
    ```bash
-   curl --proto '=https' --tlsv1.2 -sSf [https://sh.rustup.rs](https://sh.rustup.rs) | sh
+   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
    ```
 
 2. **GCC or Clang** (For the C front-end and macro expansion)
@@ -54,10 +54,13 @@ are separated into their own modules to prevent core header bloat.
 ├── Cargo.toml
 ├── CHANGELOG.md
 ├── cliff.toml
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
 ├── crates
 │   ├── ns_data
 │   │   ├── Cargo.toml
 │   │   └── src
+│   │       ├── hashmap.rs
 │   │       ├── lib.rs
 │   │       └── vec.rs
 │   ├── ns_error
@@ -83,9 +86,15 @@ are separated into their own modules to prevent core header bloat.
 │   ├── 06_errors.c
 │   ├── 07_colors.c
 │   ├── 08_string_error.c
-│   └── 09_vectors.c
+│   ├── 09_vectors.c
+│   ├── 10_hashmap.c
+│   ├── 11_underline.c
+│   ├── 12_string_length.c
+│   ├── 13_read_ns_string.c
+│   └── 14_string_interpolation.c
 ├── include
 │   ├── data_structures
+│   │   ├── ns_hashmap.h
 │   │   └── ns_vec.h
 │   ├── ns.h
 │   ├── ns_color.h
@@ -97,6 +106,7 @@ are separated into their own modules to prevent core header bloat.
 ├── LICENSE
 ├── Makefile
 ├── README.md
+├── ROADMAP.md
 ├── rumdl.toml
 └── USAGE.md
 ```
