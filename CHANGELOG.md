@@ -3,12 +3,19 @@
 
 
 
+### :rocket: New features
+
+- **(ns_io)** Implement type-safe string interpolation for ns_print
+
+
 ### :construction_worker: CI
 
 - **(trigger)** Trigger build
 
 
 ### :page_facing_up: Documentation
+
+- **(ROADMAP)** Updated ROADMAP.md
 
 - **(ROADMAP)** Add C++ support for last phase
 
@@ -21,8 +28,14 @@
 
 - **(changelog)** Update CHANGELOG.md for main [skip ci]
 
+- **(changelog)** Update CHANGELOG.md for main [skip ci]
+
 
 ### :twisted_rightwards_arrows: Pull Requests
+
+- Merge pull request #17 from NextStd/feat/string_interpolation
+
+Feat/string interpolation
 
 - Merge pull request #13 from NextStd/docs/roadmap
 
