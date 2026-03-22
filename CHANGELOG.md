@@ -3,6 +3,11 @@
 
 
 
+### :rocket: New features
+
+- **(cmd)** Implement memory-safe shell command execution with RAII
+
+
 ### :construction_worker: CI
 
 - **(trigger)** Trigger build
@@ -12,8 +17,14 @@
 
 - **(changelog)** Update CHANGELOG.md for main [skip ci]
 
+- **(changelog)** Update CHANGELOG.md for main [skip ci]
+
 
 ### :twisted_rightwards_arrows: Pull Requests
+
+- Merge pull request #18 from NextStd/feat/ns_cmd
+
+feat(cmd): implement memory-safe shell command execution with RAII
 
 - Merge branch 'main' of github.com:NextStd/nextstd
 
