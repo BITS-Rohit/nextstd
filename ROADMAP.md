@@ -40,7 +40,7 @@ These features will finalize the core `ns_io` and `ns_string` modules.
 Replacing standard C's `fork()`, `exec()`, and the highly insecure `system()`
 calls with safe, memory-managed alternatives.
 
-* [ ] **The Better `system()` (`ns_cmd`):** A high-level execution macro that
+* [x] **The Better `system()` (`ns_cmd`):** A high-level execution macro that
       prevents shell injection and captures output safely without POSIX pipes.
   * *Architecture:* Introduces an `ns_cmd_output` struct containing separated
     `ns_string stdout` and `ns_string stderr` fields. This allows developers to

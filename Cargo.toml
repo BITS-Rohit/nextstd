@@ -4,11 +4,12 @@ members = [
   "crates/ns_io",
   "crates/ns_string",
   "crates/ns_error",
-  "crates/ns_data"
+  "crates/ns_data",
+  "crates/ns_cmd",
 ]
 
 # Shared metadata
 [workspace.package]
-version = "0.2.1"
+version = "0.2.6"
 edition = "2024"
 authors = ["Vaishnav Sabari Girish"]
