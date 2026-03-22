@@ -50,8 +50,8 @@ allowing you to use it in any C project globally. See [BUILD.md](./BUILD.md) for
 prerequisite dependencies.
 
 ```bash
-git clone [https://github.com/NextStd/NextStd.git](https://github.com/NextStd/NextStd.git)
-cd NextStd
+git clone https://github.com/NextStd/nextstd.git
+cd nextstd
 sudo make install
 ```
 

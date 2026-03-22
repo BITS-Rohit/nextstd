@@ -1,0 +1,12 @@
+[package]
+name = "ns_cmd"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+ns_error = { path = "../ns_error" }
+ns_string = { path = "../ns_string" }
